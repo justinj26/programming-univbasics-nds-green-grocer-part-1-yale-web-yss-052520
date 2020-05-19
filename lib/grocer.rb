@@ -39,7 +39,7 @@ def consolidate_cart(cart)
       hash[:clearance] = cart[:clearance] 
       hash[:count] = find_count(cart[element][:item], cart)
   end 
-  #binding.pry 
+  binding.pry 
 end
 
 
