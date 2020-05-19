@@ -33,8 +33,8 @@ def consolidate_cart(cart)
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
-  clean_cart = cart.each do |element|
-     element[:count] = find_count(cart[element][:item], cart)
+  clean_cart = cart.each do |hash|
+     hash[:count] = find_count(cart[element][:item], cart)
       
   end 
   binding.pry 
