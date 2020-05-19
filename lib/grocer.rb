@@ -33,7 +33,7 @@ def consolidate_cart(cart)
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
-  clean_cart = cart.each do |hash|
+  clean_cart = cart.map do |hash|
       #hash[:item] = cart[:item]
       #hash[:price] = cart[:price]
       #hash[:clearance] = cart[:clearance] 
